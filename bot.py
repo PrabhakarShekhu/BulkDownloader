@@ -139,13 +139,13 @@ else:
 # Start message
 @xbot.on_message(filters.command('start') & OWNER_FILTER & filters.private)
 async def start(bot, update):
-    await update.reply_text(f"I'm BulkLoader\nYou can upload list of urls\n\n/help for more details!", True, reply_markup=InlineKeyboardMarkup(START_BUTTONS))
+    await update.reply_text(f"I'm BulkLoader\nYou can upload list of urls\n\n/help for more details!", True)
 
 
 # Helper msg
 @xbot.on_message(filters.command('help') & OWNER_FILTER & filters.private)
 async def help(bot, update):
-    await update.reply_text(f"How to use BulkLoader?!\n\n2 Methods:\n- send command /link and then send urls, separated by new line.\n- send txt file (links), separated by new line.", True, reply_markup=InlineKeyboardMarkup(START_BUTTONS))
+    await update.reply_text(f"How to use BulkLoader?!\n\n2 Methods:\n- send command /link and then send urls, separated by new line.\n- send txt file (links), separated by new line.", True)
 
 
 @xbot.on_message(filters.command('link') & OWNER_FILTER & filters.private)
