@@ -17,10 +17,10 @@ BUTTONS = bool(os.environ['BUTTONS']) # Upload mode. If True: will send buttons 
 # Buttons
 #START_BUTTONS=[
  #   [
-  #      InlineKeyboardButton("Source", url="https://github.com/X-Gorn/BulkLoader"),
-   #     InlineKeyboardButton("Project Channel", url="https://t.me/xTeamBots"),
+  #      InlineKeyboardButton("Source", url="https://github.com/"),
+   #     InlineKeyboardButton("Project Channel", url="https://t.me/"),
     #],
-    #[InlineKeyboardButton("Author", url="https://t.me/xgorn")],
+    #[InlineKeyboardButton("Author", url="https://t.me/")],
 #]
 
 CB_BUTTONS=[
@@ -145,7 +145,7 @@ async def start(bot, update):
 # Helper msg
 @xbot.on_message(filters.command('help') & OWNER_FILTER & filters.private)
 async def help(bot, update):
-    await update.reply_text(f"How to use Me?\n/start - Check I'm alive or dead\n/help - How to use me\n/link - Send Your links for download\n\n\nTwo Methods:\n  1. send command /link and then send urls, separated by new line.\n  2. send txt file of links, separated by new line.\n\n\nIf bot didn't respond, you can do nothing.", True)
+    await update.reply_text(f"How to use Me?\n/start - Check I'm alive or dead\n/help - How to use me\n/link - Send Your links for download\n\nTwo Methods:\n  1. send command /link and then send urls, separated by new line.\n  2. send txt file of links, separated by new line.\n\nIf bot didn't respond, you can do nothing.", True)
 
 
 @xbot.on_message(filters.command('link') & OWNER_FILTER & filters.private)
