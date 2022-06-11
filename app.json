@@ -33,7 +33,7 @@
     },
     "BUTTONS": {
       "description": "True: will send buttons (Zip or One by One) instead of AZ_ZIP | False: will do as you've fill on AZ_ZIP",
-      "value": "False"
+      "value": "True"
     }
   },
   "addons": [
