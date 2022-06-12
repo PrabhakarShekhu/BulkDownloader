@@ -18,7 +18,7 @@ BUTTONS = bool(os.environ['BUTTONS']) # Upload mode. If True: will send buttons 
 START_BUTTONS=[
   [
  #      InlineKeyboardButton("Source", url="https://github.com/"),
-      InlineKeyboardButton("Project Channel", url="https://t.me/"),
+      InlineKeyboardButton("Project Channel", url="https://t.me/ZX_Bots"),
  ],
     #[InlineKeyboardButton("Author", url="https://t.me/")],
 ]
