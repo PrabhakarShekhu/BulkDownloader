@@ -15,13 +15,13 @@ AS_ZIP = bool(os.environ['AS_ZIP']) # Upload method. If True: will Zip all your 
 BUTTONS = bool(os.environ['BUTTONS']) # Upload mode. If True: will send buttons (Zip or One by One) instead of AZ_ZIP | If False: will do as you've fill on AZ_ZIP
 
 # Buttons
-#START_BUTTONS=[
- #   [
-  #      InlineKeyboardButton("Source", url="https://github.com/"),
-   #     InlineKeyboardButton("Project Channel", url="https://t.me/"),
-    #],
+START_BUTTONS=[
+  [
+ #      InlineKeyboardButton("Source", url="https://github.com/"),
+      InlineKeyboardButton("Project Channel", url="https://t.me/"),
+ ],
     #[InlineKeyboardButton("Author", url="https://t.me/")],
-#]
+]
 
 CB_BUTTONS=[
     [
@@ -139,7 +139,7 @@ else:
 # Start message
 @xbot.on_message(filters.command('start') & OWNER_FILTER & filters.private)
 async def start(bot, update):
-    await update.reply_text(f"Hi\nI'm URL Bulk Downloader! You can Download list/bulk of urls and Upload to Telegram!\n\n/help for more details!", True)
+    await update.reply_text(f"Hi\nI'm URL Bulk Downloader! You can Download list/bulk of urls and Upload to Telegram!\n\n/help for more details!", True, reply_markup=InlineKeyboardMarkup(START_BUTTONS))
 
 
 # Helper msg
