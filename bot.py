@@ -17,10 +17,10 @@ BUTTONS = bool(os.environ['BUTTONS']) # Upload mode. If True: will send buttons 
 # Buttons
 START_BUTTONS=[
   [
- #      InlineKeyboardButton("Source Code", url="https://telegram.me/ZX_bots"),
+       InlineKeyboardButton("Source Code", url="https://telegram.me/ZX_bots"),
       InlineKeyboardButton("Project Channel", url="https://telegram.me/ZX_bots"),
  ],
-    #[InlineKeyboardButton("Share", url="https://telegram.me/share/url?url=https://telegram.me/ZX_bots")],
+    [InlineKeyboardButton("Share", url="https://telegram.me/share/url?url=https://telegram.me/ZX_bots")],
 ]
 
 CB_BUTTONS=[
