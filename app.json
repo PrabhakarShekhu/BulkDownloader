@@ -7,8 +7,8 @@
     "bulk",
     "downloader"
   ],
-  "success_url": "https://github.com/PrabhakarShekhu/BulkDownloader",
-  "repository": "https://github.com/PrabhakarShekhu/BulkDownloader",
+  "success_url": "https://telegram.me/ZX_bots",
+  "repository": "https://telegram.me/ZX_bots",
   "env": {
     "BOT_TOKEN": {
       "description": "Your bot token, as a string.",
